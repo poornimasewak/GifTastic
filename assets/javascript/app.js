@@ -1,4 +1,4 @@
-	$(document).ready(function() {
+	// $(document).ready(function() {
 	    // Initial array of animals
 	    var animals = [];
 
@@ -37,22 +37,24 @@
 	    });
 
 	    // This calls the renderButtons() function
-	    // renderButtons();
+	    renderButtons();
 
 	    //delegation thing
 	    $(document).on('click', '.animal', function(event) {
-	        console.log('hi');
+	        
 	        var a = $(this).data('animal');
-	        // console.log(a);
+	        
 	        var queryURL = "http://api.giphy.com/v1/gifs/search?q=" + a + "&api_key=dc6zaTOxFJmzC&limit=10";
-
+            //ajax call with done function
 	        $.ajax({
 	            url: queryURL,
 	            method: 'GET'
 	        }).done(function(response) {
-	            console.log(response);
+
+	            //storing response back from server in a variable
 	            var result = response.data;
 
+                //Loop to run each element in an array
 	            for (var i = 0; i < result.length; i++) {
 	                var gifDiv = $('<div class="item">');
 
@@ -73,7 +75,7 @@
 	        });
 	    });
         
-        //
+        //Function to perform animation on still images on click event
         $(document).on('click', '.gif', function(event) {
 
         	var state = $(this).attr('data-state');
@@ -88,4 +90,4 @@
 
         });
 
-	});
+	// });
