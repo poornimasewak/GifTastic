@@ -1,4 +1,4 @@
-	// $(document).ready(function() {
+	$(document).ready(function() {
 	    // Initial array of animals
 	    var animals = [];
 
@@ -90,4 +90,4 @@
 
         });
 
-	// });
+	});
