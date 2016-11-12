@@ -10,7 +10,19 @@
 		.inside {
 			width: 900px;
 			background-color: white;
-			margin-left: 200px;
+			margin-left: 150px;
 			text-align: center;
+			margin-top: 30px;
+		}
+		.animal {
+			margin-top: 10px;
+			margin-left: 10px;
+			margin-bottom: 20px;  
+		}
+		#animal-form {
+			margin-top: 10px;
+		}
+		#gifsAppearHere {
+			margin-top: 10px;
 		}
 	

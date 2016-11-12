@@ -12,7 +12,7 @@
 	        for (var i = 0; i < animals.length; i++) {
 
 	            // Then dynamicaly generates buttons for each animal in the array
-	            $('#animalView').append('<button class="animal" data-animal="' + animals[i] + '">' + animals[i] + '</button>');
+	            $('#animalView').append('<button type="button" class="btn btn-warning animal" data-animal="' + animals[i] + '">' + animals[i] + '</button>');
 	        }
 	        //           $('.animal').on('click', function() {
 	        // 	console.log('hi');
