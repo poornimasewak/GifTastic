@@ -2,4 +2,15 @@
 		button, div, form, input {
 			margin: 10px;
 		}
+
+		.outer {
+			background-image: url('../images/bg1.jpg');
+			background-size: cover;
+		}
+		.inside {
+			width: 900px;
+			background-color: white;
+			margin-left: 200px;
+			text-align: center;
+		}
 	
